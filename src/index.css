@@ -1,0 +1,96 @@
+
+
+  /* Certificate Request Styles */
+.request-list {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.request-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.request-info h4 {
+  margin: 0 0 5px 0;
+}
+
+.request-type {
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-left: 10px;
+  background: #eee;
+}
+
+.request-type.clearance { background: #d4edda; color: #155724; }
+.request-type.residency { background: #cce5ff; color: #004085; }
+.request-type.indigency { background: #fff3cd; color: #856404; }
+
+.request-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.approve-button, .reject-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.approve-button {
+  background: #28a745;
+  color: white;
+}
+
+.reject-button {
+  background: #dc3545;
+  color: white;
+}
+
+.notification-badge {
+  background: #dc3545;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+/* Viewer Dashboard Styles */
+.certificate-request-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.certificate-request-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.request-status {
+  text-align: center;
+  padding: 20px;
+}
+
+.status-pending i {
+  font-size: 40px;
+  color: #ffc107;
+  margin-bottom: 15px;
+}
+
+.status-pending h3 {
+  color: #333;
+  margin-bottom: 10px;
+}

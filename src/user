@@ -1,0 +1,23 @@
+        <div className="profile-section">
+          {user && (
+            <>
+              <img src={user?.avatar ? user.avatar : defaultAvatar} alt="User Avatar" className="avatar" />
+              <button className="profile-button" onClick={() => setShowUserDetails(!showUserDetails)}>
+                <span>Hello, {user.firstName}!</span>
+                <br />
+                <small>View Profile</small>
+              </button>
+              <button className="logout-button" onClick={handleLogout}>Log Out</button>
+            </>
+          )}
+        </div>
+
+        {showUserDetails && user && (
+          <div className="user-details">
+            <p><strong>Name:</strong> <span>{user.firstName} {user.lastName}</span></p>
+            <p><strong>Email:</strong> <span>{user.email}</span></p>
+            <p><strong>Role:</strong> <span>{user.role}</span></p>
+            <p><strong>Address:</strong> <span>{user.address}</span></p>
+            <p><strong>Phone:</strong> <span>{user.phoneNumber}</span></p>
+          </div>
+        )}

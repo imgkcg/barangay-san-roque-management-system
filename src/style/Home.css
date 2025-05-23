@@ -1,0 +1,661 @@
+/* Base Styles */
+.brgy-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 100%;
+  overflow-x: hidden;
+
+}
+
+/* Header Styles */
+.brgy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.brgy-header-logo h1 {
+  color: #6f1926;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.brgy-header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* User Profile Styles */
+.brgy-user-profile {
+  position: relative;
+  cursor: pointer;
+}
+
+.brgy-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #6f1926;
+  
+}
+
+.brgy-profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  z-index: 1000;
+}
+
+.brgy-dropdown-item {
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.2s;
+}
+
+.brgy-dropdown-item:hover {
+  background-color: #f5f5f5;
+  color: #6f1926;
+}
+
+.brgy-dropdown-item i {
+  width: 20px;
+  text-align: center;
+}
+
+/* Auth Buttons */
+.brgy-auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.brgy-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+}
+
+.brgy-btn-login {
+  background-color: transparent;
+  color: #6f1926;
+  border: 1px solid #6f1926;
+}
+
+.brgy-btn-login:hover {
+  background-color: #6f1926;
+  color: white;
+}
+
+.brgy-btn-register {
+  background-color: #6f1926;
+  color: white;
+}
+
+.brgy-btn-register:hover {
+  background-color: #004d33;
+}
+
+.brgy-btn-primary {
+  background-color: #6f1926;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+}
+
+.brgy-btn-primary:hover {
+  background-color: #004d33;
+  transform: translateY(-2px);
+}
+/* Navigation */
+.brgy-main-nav {
+  padding: 0.8rem 2rem;
+
+  align-items: center;
+  align-items: center;
+}
+
+.brgy-main-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.brgy-main-nav a {
+  color: #6f1926;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.brgy-main-nav a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:#6f1926;
+  transition: width 0.3s;
+}
+
+.brgy-main-nav a:hover:after {
+  width: 100%;
+}
+
+.brgy-main-nav .brgy-active a {
+  font-weight: 600;
+}
+
+.brgy-main-nav .brgy-active a:after {
+  width: 100%;
+}
+
+.brgy-hero-content {
+  position: relative;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #4c1019;
+  color: white;
+}
+.quote-text {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #6f1926;
+  max-width: 100%;
+  text-align: center;
+
+}
+
+
+.brgy-hero-content h1 {
+  font-size: 3rem;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.brgy-hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* About Section */
+
+
+
+.brgy-about-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+
+
+.brgy-section-title {
+  text-align: center;
+  color: #6f1926;
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+  margin-top: -15px;
+}
+
+.brgy-about-content {
+  display: flex;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.brgy-about-text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.brgy-about-stats {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.brgy-stat-item {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.brgy-stat-item:hover {
+  transform: translateY(-5px);
+}
+
+.brgy-stat-item i {
+  font-size: 2rem;
+  color: #6f1926;
+  margin-bottom: 1rem;
+}
+
+.brgy-stat-item h3 {
+  font-size: 1.8rem;
+  color: #6f1926;
+  margin: 0.5rem 0;
+}
+
+.brgy-stat-item p {
+  color: #666;
+  margin: 0;
+}
+
+/* Contact Section */
+.brgy-contact-section {
+  padding: 4rem 2rem;
+  background-color: white;
+}
+
+.brgy-contact-content {
+  display: flex;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.brgy-contact-info {
+  flex: 1;
+}
+
+.brgy-contact-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+
+.brgy-contact-item i {
+  font-size: 1.5rem;
+  color: #6f1926;
+  margin-top: 5px;
+}
+
+.brgy-contact-item h3 {
+  color: #6f1926;
+  margin-bottom: 0.5rem;
+}
+
+.brgy-contact-item p {
+  margin: 0;
+  color: #555;
+}
+
+.brgy-contact-form {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.brgy-contact-form h3 {
+  color: #6f1926;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.brgy-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.brgy-form-group input,
+.brgy-form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.brgy-form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Map */
+.brgy-map-container {
+  height: 400px;
+  position: relative;
+}
+
+.brgy-map-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brgy-map-overlay {
+  text-align: center;
+  color: #666;
+}
+
+.brgy-map-overlay i {
+  font-size: 3rem;
+  color: #6f1926;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.brgy-footer {
+  background-color: #222;
+  color: #ddd;
+  padding: 3rem 0 0;
+}
+
+.brgy-footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.brgy-footer-logo h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.brgy-footer-logo p {
+  color: #aaa;
+}
+
+.brgy-footer-links h3,
+.brgy-footer-services h3,
+.brgy-footer-social h3 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.brgy-footer-links ul,
+.brgy-footer-services ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.brgy-footer-links li,
+.brgy-footer-services li {
+  margin-bottom: 0.8rem;
+}
+
+.brgy-footer-links a,
+.brgy-footer-services a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.brgy-footer-links a:hover,
+.brgy-footer-services a:hover {
+  color: white;
+}
+
+.brgy-social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.brgy-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 50%;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.brgy-social-icon:hover {
+  background-color: #6f1926;
+}
+
+.brgy-newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.brgy-newsletter-form input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.brgy-footer-bottom {
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-top: 1px solid #444;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.brgy-footer-bottom p {
+  margin: 0.5rem 0;
+}
+
+.brgy-footer-bottom a {
+  color: #aaa;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.brgy-footer-bottom a:hover {
+  color: white;
+}
+
+
+/* Officials Section */
+.officials-section {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+}
+
+.officials-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+  color: #6f1926;
+  position: relative;
+  align-items: center;
+}
+
+
+
+.officials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.official-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.official-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.official-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1.5rem;
+  border: 4px solid #6f1926;
+}
+
+.official-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.official-card h3 {
+  margin: 0.5rem 0;
+  color: #6f1926;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.official-title {
+  color: #6f1926;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.official-title p {
+  color: #6f1926;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+
+.official-card p:last-child {
+  color: #6f1926;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .officials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .official-photo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .officials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .brgy-about-content,
+  .brgy-contact-content {
+    flex-direction: column;
+  }
+  
+  .brgy-footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .brgy-header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .brgy-header-logo {
+    margin-bottom: 1rem;
+  }
+  
+  .brgy-main-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .brgy-hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .brgy-about-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .brgy-footer-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.brgy-contact-item a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.7s ease;
+}
+
+.brgy-contact-item a:hover {
+  color: #f4f4f4; /* Change to your preferred hover color */
+}
+
+.brgy-contact-item h3 {
+  display: inline-block; /* Makes only the text clickable */
+  margin-bottom: 0.5rem;
+}

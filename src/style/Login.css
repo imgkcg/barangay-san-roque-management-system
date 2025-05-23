@@ -1,0 +1,333 @@
+
+
+  
+  body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+  }
+  
+  .login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    padding: 40px 0;
+    flex-grow: 1;
+  }
+  
+  .login-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .login-image {
+    flex: 1;
+    background-color: #6f1926;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+  
+  .login-image h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .login-image p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.7;
+  }
+  
+  .login-image .features {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .login-image .features li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-image .features li i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .login-form-container {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .login-form-header {
+    text-align: center;
+
+    margin-bottom: 30px;
+  }
+  
+  .login-form-header h3 {
+    font-size: 1.8rem;
+    color: #6f1926;
+    margin-top: 70px;
+    margin-bottom: 10px;
+  }
+  
+  .login-form-header p {
+    color: #7f8c8d;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: #6f1926;
+  }
+  
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+  }
+  
+  .remember-me input {
+    margin-right: 8px;
+  }
+  
+  .forgot-password {
+    color: #6f1926;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .forgot-password:hover {
+    color: #5a1420;
+  }
+  
+  .btn {
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -10  px;
+  }
+  
+  .btn-primary {
+    background-color: #6f1926;
+    color: white;
+    width: 100%;
+  }
+  
+  .btn-primary:hover {
+    background-color: #5a1420;
+  }
+  
+  .btn-primary:disabled {
+    background-color: #a75965;
+    cursor: not-allowed;
+  }
+  
+  .login-divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .login-divider::before, .login-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  .login-divider span {
+    padding: 0 15px;
+    color: #7f8c8d;
+  }
+  
+  .social-login {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+  }
+  
+  .social-btn:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .social-btn i {
+    margin-right: 10px;
+  }
+  
+  .register-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .register-link a {
+    color: #6f1926;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .register-link a:hover {
+    color: #5a1420;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #6f1926;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 992px) {
+    .login-container {
+      flex-direction: column;
+      max-width: 500px;
+    }
+    
+    .login-image, .login-form-container {
+      padding: 30px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .login-image, .login-form-container {
+      padding: 20px;
+    }
+    
+    .social-login {
+      flex-direction: column;
+    }
+    
+    .social-btn {
+      margin: 5px 0;
+    }
+    
+    .form-options {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .forgot-password {
+      margin-top: 10px;
+    }
+  }
+
+  /* Additional styles for the signup form */
+
+/* Form row styling for side-by-side inputs */
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 0;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Adjust spacing for signup-specific elements */
+.login-form-container {
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-right: 30px;
+}
+
+/* Style select elements to match inputs */
+select.form-control {
+  appearance: auto;
+  background-color: white;
+  height: 42px;
+}
+
+/* Mobile responsiveness adjustments */
+@media (max-width: 992px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .login-form-container {
+    max-height: none;
+    overflow-y: visible;
+    padding-right: 30px;
+  }
+}
+
+/* Add the following to Login.css if not already there */
+.body-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
